@@ -1,0 +1,414 @@
+ /* Corpo Geral */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #0f0f0f;
+    height: 100vh;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#sobreMim {
+    transition: .5s;
+
+}
+
+.capa {
+    background-image: url(/Imagens/BannerNatureza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 920px;
+    border-bottom: 10px solid greenyellow;
+}
+
+/* Cabeçalho */
+header {
+    padding: 40px 4%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #000000d3;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.06);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #84A60A;
+    opacity: 100%;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 7px #84A60A;
+    color: white;
+}
+/* TelaInicial */
+main {
+    display: block;
+}
+
+section.TelaIncial {
+    padding: 40px 4%;
+
+}
+
+.TelaIncial h1 {
+    color: #fff;
+    font-size: 120px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
+}
+
+.TelaIncial .txt-TelaIncial span {
+    color: #84A60A;
+}
+
+.TelaIncial .txt-TelaIncial p {
+    color: #fff;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    max-width: 800px;
+    margin: 25px 0px;
+}
+
+/* Atividade1 */
+.Atividade {
+    height: 650px;
+}
+
+.Atividade1 {
+    margin: 2%;
+    height: 400px;
+    display: flex;
+}
+
+.FotoAtividade1 {
+
+    width: 50%;
+    height: 400px;
+}
+.FotoAtividade1 img{
+   width: 80%;
+    height: 400px;
+    margin: 5%;
+}
+
+.TxtAtividade1 {
+    
+    width: 50%;
+}
+.TxtAtividade1 h1{
+   color: white;
+   text-align: center;
+   margin-top: 6%;
+}
+.TxtAtividade1 p{
+   color: white;
+   margin-top: 6%;
+   text-align: center;  
+}
+.TxtAtividade1 h2{
+    color: white;
+    text-align: center;
+    margin-top: 10%; }
+    
+
+    /* Atividade2 */
+.Atividade2 {
+   margin: 2%;
+   height: 400px;
+   display: flex;
+}
+
+.FotoAtividade2 {
+   width: 50%;
+   height: 400px;
+   display: flex;
+}
+.FotoAtividade2 img{
+  width: 80%;
+   height: 5%;
+   margin: 5%;
+}
+
+.TxtAtividade2 {
+   width: 50%;
+}
+.TxtAtividade2 h1{
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+}
+.TxtAtividade2 p{
+  color: white;
+  margin-top: 5%;
+  text-align: center;
+}
+.TxtAtividade2 h2{
+   color: white;
+   text-align: center;
+   margin-top: 10%; }
+
+   /* Atividade3 */
+.Atividade3 {
+    margin: 2%;
+    height: 400px;
+    display: flex;
+ }
+ 
+ .FotoAtividade3 {
+    width: 50%;
+    height: 400px;
+    display: flex;
+ }
+ .FotoAtividade3 img{
+   width: 80%;
+    height: 5%;
+    margin: 5%;
+ }
+ 
+ .TxtAtividade3 {
+    width: 50%;
+ }
+ .TxtAtividade3 h1{
+   color: white;
+   text-align: center;
+   margin-top: 5%;
+ }
+ .TxtAtividade3 p{
+   color: white;
+   margin-top: 5%;
+   text-align: center;
+ }
+ .TxtAtividade3 h2{
+    color: white;
+    text-align: center;
+    margin-top: 10%; }
+  
+    /* Atividade4 */
+   .Atividade4 {
+    margin: 2%;
+    height: 400px;
+    display: flex;
+ }
+ 
+ .FotoAtividade4 {
+    width: 50%;
+    height: 400px;
+    display: flex;
+ }
+ .FotoAtividade4 img{
+   width: 80%;
+    height: 5%;
+    margin: 5%;
+ }
+ 
+ .TxtAtividade4 {
+    width: 50%;
+ }
+ .TxtAtividade4 h1{
+   color: white;
+   text-align: center;
+   margin-top: 5%;
+ }
+ .TxtAtividade4 p{
+   color: white;
+   margin-top: 5%;
+   text-align: center;
+ }
+ .TxtAtividade4 h2{
+    color: white;
+    text-align: center;
+    margin-top: 10%; }
+   .trimestre {
+background-color: #1e1e1e;
+color: white;
+ width: 1500px;
+padding: 15px 20px;
+text-align: center;
+font-size: 22px;
+font-weight: bold;
+ border-radius: 10px;
+margin: 40px auto 20px auto;
+ box-shadow: 0 0 10px rgba(156, 140, 140, 0.2);
+}
+.segundoTrimestre {
+background-color: #1e1e1e;
+color: white;
+ width: 1500px;
+padding: 15px 20px;
+text-align: center;
+font-size: 22px;
+font-weight: bold;
+ border-radius: 10px;
+margin: 40px auto 20px auto;
+ box-shadow: 0 0 10px rgba(156, 140, 140, 0.2);
+ margin-top: 100px;
+} 
+/* atividade5 */
+ .Atividade5 {
+    margin: 2%;
+    height: 400px;
+    display: flex;
+ }
+ 
+ .FotoAtividade5 {
+    width: 50%;
+    height: 400px;
+    display: flex;
+ }
+ .FotoAtividade5 img{
+   width: 80%;
+    height: 5%;
+    margin: 5%;
+ }
+ 
+ .TxtAtividade5 {
+    width: 50%;
+ }
+ .TxtAtividade5 h1{
+   color: white;
+   text-align: center;
+   margin-top: 5%;
+ }
+ .TxtAtividade5 p{
+   color: white;
+   margin-top: 5%;
+   text-align: center;
+ }
+ .TxtAtividade5 h2{
+    color: white;
+    text-align: center;
+    margin-top: 10%; }
+    /* atividade 5 */
+    
+    /* atividade 6 */
+    .Atividade6 {
+    margin: 2%;
+    height: 400px;
+    display: flex;
+ }
+ 
+ .FotoAtividade6 {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    margin-left: 120px;
+ }
+ .FotoAtividade6 img{
+   width: 80%;
+    height: auto;
+    margin: 5%;
+ }
+ 
+ .TxtAtividade6 {
+    width: 50%;
+    margin-top: 150px;
+ }
+ .TxtAtividade6 h1{
+   color: white;
+   text-align: center;
+   margin-top: 5%;
+ }
+ .TxtAtividade6 p{
+   color: white;
+   margin-top: 5%;
+   text-align: center;
+ }
+ .TxtAtividade6 h2{
+    color: white;
+    text-align: center;
+    margin-top: 10%; }
+    /* atividade 6 */
+
+        .Atividade7 {
+    margin: 2%;
+    height: 400px;
+    display: flex;
+    margin-top: 300px;
+ }
+ 
+ .FotoAtividade7 {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    margin-left: 90px;
+
+ }
+ .FotoAtividade7 img{
+   width: 80%;
+    height: auto;
+    margin: 5%;
+ }
+ 
+ .TxtAtividade7 {
+    width: 50%;
+    margin-top: 150px;
+ }
+ .TxtAtividade7 h1{
+   color: white;
+   text-align: center;
+   margin-top: 5%;
+ }
+ .TxtAtividade7 p{
+   color: white;
+   margin-top: 5%;
+   text-align: center;
+ }
+ .TxtAtividade7 h2{
+    color: white;
+    text-align: center;
+    margin-top: 10%; }
