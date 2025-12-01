@@ -1,0 +1,411 @@
+/* Corpo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f0f0f;
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.capa {
+    background-image: url(/Imagens/BannerPortfolio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 920px;
+    border-bottom: 10px solid rgb(48, 0, 182);
+}
+
+/* Cabeçalho */
+header {
+    padding: 20px 4%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #000000d3;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.06);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #4c00ff;
+    opacity: 100%;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 7px #4c00ff;
+}
+
+/* Tela Inicial */
+main {
+    display: block;
+}
+
+section.TelaIncial {
+    padding: 40px 4%;
+}
+
+.TelaIncial h1 {
+    color: #fff;
+    font-size: 120px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
+}
+
+.TelaIncial .txt-TelaIncial span {
+    color: #4c00ff;
+}
+
+.TelaIncial .txt-TelaIncial p {
+    color: #fff;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    max-width: 800px;
+    margin: 25px 0px;
+}
+
+/* ===== Seção de Portfolios ===== */
+.portfolios-section {
+    padding: 100px 4%;
+    background-color: #0f0f0f;
+}
+
+.portfolios-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-box {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 450px;
+    width: 100%;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-box:hover {
+    transform: translateY(-10px);
+    border: 2px solid #4c00ff;
+    box-shadow: 0px 0px 30px rgba(76, 0, 255, 0.5);
+}
+
+/* Badge do Ano */
+.portfolio-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #4c00ff 0%, #8000ff 100%);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(76, 0, 255, 0.4);
+}
+
+/* Imagem do Portfolio */
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-box:hover .portfolio-image img {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(76, 0, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-box:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-overlay i {
+    font-size: 60px;
+    color: white;
+}
+
+/* Conteúdo do Portfolio */
+.portfolio-content {
+    padding: 30px;
+}
+
+.portfolio-content h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-content p {
+    color: #7d7d7d;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn-ver-portfolio {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    background-color: #4c00ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border: 0;
+}
+
+.btn-ver-portfolio:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 15px #4c00ff;
+}
+
+.btn-ver-portfolio i {
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.btn-ver-portfolio:hover i {
+    transform: translateX(5px);
+}
+
+/* ===== Modal de Contato ===== */
+.modal-contato {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-contato {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #4c00ff;
+    border: 2px solid #4c00ff;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: modalSlide 0.3s ease;
+}
+
+@keyframes modalSlide {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fechar-modal {
+    color: #7d7d7d;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fechar-modal:hover {
+    color: #4c00ff;
+    transform: scale(1.2);
+}
+
+.modal-gif {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-gif img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4c00ff;
+    box-shadow: 0px 0px 10px 0px #280085;
+}
+
+.modal-content-contato h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-contato h2 span {
+    color: #4c00ff;
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: 2px solid transparent;
+}
+
+.contato-item:hover {
+    border: 2px solid #4c00ff;
+    box-shadow: 0px 0px 7px #2f0299;
+    transform: scale(1.02);
+}
+
+.contato-item i {
+    font-size: 30px;
+    color: #4c00ff;
+    min-width: 30px;
+}
+
+.contato-item h4 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contato-item p {
+    color: #7d7d7d;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ===== Responsividade ===== */
+@media screen and (max-width: 768px) {
+    .TelaIncial h1 {
+        font-size: 60px;
+    }
+
+    .TelaIncial .txt-TelaIncial p {
+        font-size: 16px;
+    }
+
+    .portfolios-section {
+        padding: 50px 4%;
+    }
+
+    .portfolios-container {
+        gap: 30px;
+    }
+
+    .portfolio-box {
+        max-width: 100%;
+    }
+
+    .portfolio-content h3 {
+        font-size: 24px;
+    }
+
+    .modal-content-contato {
+        padding: 30px 20px;
+    }
+
+    .modal-gif img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .modal-content-contato h2 {
+        font-size: 24px;
+    }
+}

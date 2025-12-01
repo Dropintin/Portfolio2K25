@@ -1,0 +1,365 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+header {
+  padding: 20px 4%;
+  background-color: #000000d3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #7d7d7d;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: #fff;
+  transform: scale(1.06);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #4b6cb7;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-contato button:hover {
+  box-shadow: 0px 0px 7px #4b6cb7;
+  color: white;
+}
+
+/* ==========================
+   CAPA
+=========================== */
+.capa {
+  background-image: url(/Imagens/BannerLinguagens.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 920px;
+  border-bottom: 10px solid #4b6cb7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.TelaIncial h1 {
+  font-size: 120px;
+  color: #fff;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.TelaIncial h1 span {
+  color: #4b6cb7;
+}
+
+.TelaIncial p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+.accordion-header {
+  width: 90%;
+  max-width: 1500px;
+  margin: 60px auto 20px auto;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  padding: 18px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(156, 140, 140, 0.2);
+  position: relative;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px #5d8bf4;
+}
+
+.accordion-header:hover {
+  background-color: #2a2a2a;
+  transform: scale(1.01);
+}
+
+.accordion-header::after {
+  content: "▼";
+  font-size: 18px;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.content-panel {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #151515;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.content-panel.show {
+  padding: 20px 0;
+  max-height: 3000px;
+  opacity: 1;
+}
+
+/* ==========================
+   ATIVIDADES
+=========================== */
+/* Aplica o mesmo estilo a todas as atividades */
+.Atividade1, .Atividade2, .Atividade3, .Atividade4, .Atividade5, .Atividade6, .Atividade7, .Atividade8 {
+  margin: 40px auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  border: 1px solid #4b6cb7;
+  border-radius: 10px;
+  background-color: #151515;
+}
+
+/* Corrige tamanho das imagens */
+.FotoAtividade1 img,
+.FotoAtividade2 img,
+.FotoAtividade3 img,
+.FotoAtividade4 img,
+.FotoAtividade5 img,
+.FotoAtividade6 img,
+.FotoAtividade7 img,
+.FotoAtividade8 img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Texto das atividades */
+.TxtAtividade1, .TxtAtividade2, .TxtAtividade3, .TxtAtividade4,
+.TxtAtividade5, .TxtAtividade6, .TxtAtividade7, .TxtAtividade8 {
+  width: 45%;
+  min-width: 300px;
+  text-align: center;
+}
+/* ==========================
+   3º TRIMESTRE
+=========================== */
+button.terceiroTrimestre {
+  background-color: #1e1e1e;
+ 
+}
+
+button.terceiroTrimestre:hover {
+  background-color: #2b2b2b;
+  box-shadow: 0 0 8px #5d8bf4;
+}
+
+.Atividade7, .Atividade8 {
+  border-color: #5d8bf4;
+}
+
+.Atividade7 img, .Atividade8 img {
+  box-shadow: 0 0 10px rgba(93, 139, 244, 0.3);
+}
+
+.TxtAtividade7 h1, .TxtAtividade8 h1 {
+  color: #5d8bf4;
+}
+.modal-contato {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-contato {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #4b6cb7;
+    border: 2px solid #4b6cb7;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: modalSlide 0.3s ease;
+}
+
+@keyframes modalSlide {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fechar-modal {
+    color: #7d7d7d;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fechar-modal:hover {
+    color: #4b6cb7;
+    transform: scale(1.2);
+}
+
+.modal-gif {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-gif img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4b6cb7;
+    box-shadow: 0px 0px 10px 0px #174cc9;
+}
+
+.modal-content-contato h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-contato h2 span {
+    color: #4b6cb7;
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: 2px solid transparent;
+}
+
+.contato-item:hover {
+    border: 2px solid #4b6cb7;
+    box-shadow: 0px 0px 7px #1049ce;
+    transform: scale(1.02);
+}
+
+.contato-item i {
+    font-size: 30px;
+    color: #4b6cb7;
+    min-width: 30px;
+}
+
+.contato-item h4 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contato-item p {
+    color: #7d7d7d;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .modal-content-contato {
+        padding: 30px 20px;
+    }
+    
+    .modal-gif img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .modal-content-contato h2 {
+        font-size: 24px;
+    }
+    
+    .contato-item {
+        padding: 12px;
+    }
+}

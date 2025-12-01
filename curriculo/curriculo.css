@@ -1,0 +1,304 @@
+/* Corpo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #0f0f0f;
+    height: 100vh;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#sobreMim {
+    transition: .5s;
+
+}
+
+.capa {
+    background-image: url(/Imagens/b0abfa6c-8715-4960-853d-757c1d589a32.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 920px;
+    border-bottom: 10px solid #164D59;
+}
+
+/* Cabeçalho */
+header {
+    padding: 40px 4%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #000000d3;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.06);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #1F818C;
+    opacity: 100%;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 7px #1F818C;
+    color: #fff;
+}
+
+/*tela incial*/
+section.TelaIncial {
+    padding: 40px 4%;
+
+}
+
+.TelaIncial h1 {
+    color: #fff;
+    font-size: 120px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
+}
+
+.TelaIncial .txt-TelaIncial span {
+    color: #1F818C;
+}
+
+.TelaIncial .txt-TelaIncial p {
+    color: #fff;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    max-width: 800px;
+    margin: 25px 0px;
+}
+
+.SobreMim button {
+
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #D92332;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.SobreMim button:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 7px #d92332d5;
+    transition: .2s;
+    color: white;
+}
+
+/* Atividade1 */
+.Atividade {
+    height: 650px;
+}
+
+.Atividade1 {
+    margin: 2%;
+    height: 400px;
+    display: flex;
+}
+
+.FotoAtividade1 {
+    margin-top: 30%;
+    width: 55%;
+    height: 500px;
+    margin-left: 500px;
+    
+
+}
+
+.FotoAtividade1 img {
+    width: 80%;
+    height: 200%;
+    box-shadow: 5px 1px 7px #2326d9d5;
+}
+.modal-contato {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-contato {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #1F818C;
+    border: 2px solid #1F818C;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: modalSlide 0.3s ease;
+}
+
+@keyframes modalSlide {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fechar-modal {
+    color: #7d7d7d;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fechar-modal:hover {
+    color: #1F818C;
+    transform: scale(1.2);
+}
+
+.modal-gif {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-gif img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1F818C;
+    box-shadow: 0px 0px 10px 0px #1F818C;
+}
+
+.modal-content-contato h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-contato h2 span {
+    color: #1F818C;
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: 2px solid transparent;
+}
+
+.contato-item:hover {
+    border: 2px solid #1F818C;
+    box-shadow: 0px 0px 7px #0c92a1;
+    transform: scale(1.02);
+}
+
+.contato-item i {
+    font-size: 30px;
+    color: #1F818C;
+    min-width: 30px;
+}
+
+.contato-item h4 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contato-item p {
+    color: #7d7d7d;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .modal-content-contato {
+        padding: 30px 20px;
+    }
+    
+    .modal-gif img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .modal-content-contato h2 {
+        font-size: 24px;
+    }
+    
+    .contato-item {
+        padding: 12px;
+    }
+}

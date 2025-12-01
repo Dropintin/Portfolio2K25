@@ -1,0 +1,580 @@
+ /* Corpo Geral */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+
+ html {
+     scroll-behavior: smooth;
+
+ }
+
+ body {
+     background-color: #0f0f0f;
+     height: 100vh;
+
+ }
+
+ .flex {
+     display: flex;
+ }
+
+ .interface {
+     max-width: 1280px;
+     margin: 0 auto;
+ }
+
+ #sobreMim {
+     transition: .5s;
+
+ }
+
+ .capa {
+     background-image: url(/Imagens/ChatGPT_Image_12_de_abr._de_2025_18_05_51.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 920px;
+     border-bottom: 10px solid red;
+ }
+
+ /* Cabeçalho */
+ header {
+     padding: 40px 4%;
+     padding: 20px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     background-color: #000000d3;
+     z-index: 1000;
+     position: fixed;
+     width: 100%;
+ }
+
+ header>.interface {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+ }
+
+ header a {
+     color: #7d7d7d;
+     text-decoration: none;
+     display: inline-block;
+     transition: .2s;
+
+ }
+
+ header a:hover {
+     color: #fff;
+     transform: scale(1.06);
+ }
+
+ header nav ul {
+     list-style-type: none;
+ }
+
+ header nav ul li {
+     display: inline-block;
+     padding: 0 40px;
+ }
+
+ header .btn-contato button {
+     padding: 10px 40px;
+     font-size: 18px;
+     font-weight: 600;
+     background-color: #D92332;
+     opacity: 100%;
+     border: 0;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+ header .btn-contato button:hover {
+     box-shadow: 0px 0px 7px #d92332d5;
+     color: white;
+ }
+
+ /*tela incial*/
+ main {
+     display: block;
+ }
+
+ section.TelaIncial {
+     padding: 40px 4%;
+
+ }
+
+ .TelaIncial h1 {
+     color: #fff;
+     font-size: 120px;
+     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+     margin-top: 200px;
+ }
+
+.txt-TelaIncial span {
+   color: #D92332;
+}
+ .TelaIncial .txt-TelaIncial p {
+     color: #fff;
+     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+     font-size: 20px;
+     max-width: 800px;
+     margin: 25px 0px;
+ }
+
+ .SobreMim button {
+
+     padding: 10px 40px;
+     font-size: 18px;
+     font-weight: 600;
+     background-color: #D92332;
+     border: 0;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+ .SobreMim button:hover {
+     transform: scale(1.06);
+     box-shadow: 0px 0px 7px #d92332d5;
+     transition: .2s;
+     color: white;
+ }
+
+ /*Estilo Do Sobre*/
+ section.Sobre {
+     padding: 40px 4%;
+
+ }
+
+ section.Sobre .flex {
+     align-items: center;
+     margin-top: 400px;
+     gap: 30px;
+ }
+
+ .Sobre .Txt-Sobre {
+     color: #ffffff;
+     margin-left: 50px;
+
+ }
+
+ .Txt-Sobre h2 {
+     font-size: 70px;
+     line-height: 80px;
+     margin-bottom: 0px;
+ }
+
+ .Txt-Sobre span {
+     color: #ff0015;
+     display: block;
+ }
+
+ .Sobre p {
+     max-width: 800px;
+     font-size: 20px;
+ }
+
+ .Sobre img {
+     width: 80%;
+ }
+
+
+ /* Carrocel */
+ /* ===== Seção da Turma ===== */
+.turma {
+  margin-top: 200px;
+  text-align: center;
+  color: #fff;
+}
+
+.turma h2 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 30px; /* espaço entre o título e o carrossel */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Carrossel ===== */
+.container-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider.on {
+  opacity: 1;
+}
+
+#prev-button,
+#next-button {
+  cursor: pointer;
+  color: white;
+  font-size: 36px;
+  margin: 0 20px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+#prev-button:hover,
+#next-button:hover {
+  border: 2px solid #d92332;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 0px #d92332;
+}
+.turma{
+    margin-top: 1150px;
+}
+ 
+.habilidades {
+    padding: 80px 4%;
+    background-color: #0f0f0f;
+    margin-top: 100px;
+}
+
+.habilidades .titulo {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.habilidades .titulo span {
+    color: #D92332;
+}
+
+.flex-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.habilidade-box {
+    background-color: #1a1a1a;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+    border: 2px solid transparent;
+}
+
+.habilidade-box:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 10px 0px #D92332;
+    border: 2px solid #D92332;
+}
+
+.habilidade-box i {
+    font-size: 50px;
+    color: #D92332;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.habilidade-box h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.habilidade-box p {
+    color: #7d7d7d;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* ===== Seção de Projetos ===== */
+.projetos {
+    padding: 80px 4%;
+    background-color: #0f0f0f;
+    margin-top: 100px;
+}
+
+.projetos .titulo {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.projetos .titulo span {
+    color: #D92332;
+}
+
+.flex-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.projeto-box {
+    background-color: #1a1a1a;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    border: 2px solid transparent;
+}
+
+.projeto-box:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 10px 0px #D92332;
+    border: 2px solid #D92332;
+}
+
+.projeto-img {
+    width: 80px;
+    height: 80px;
+    background-color: #D92332;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 7px #d92332d5;
+}
+
+.projeto-img i {
+    font-size: 40px;
+    color: white;
+}
+
+.projeto-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.projeto-box p {
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 25px;
+    color: #7d7d7d;
+}
+
+.btn-projeto {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #D92332;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+    border: 0;
+}
+
+.btn-projeto:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 7px #d92332d5;
+    color: white;
+}
+
+/* ===== Responsividade ===== */
+@media screen and (max-width: 768px) {
+    .habilidades, .projetos {
+        padding: 50px 4%;
+        margin-top: 50px;
+    }
+    
+    .habilidades .titulo, .projetos .titulo {
+        font-size: 28px;
+    }
+    
+    .flex-habilidades, .flex-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .habilidade-box, .projeto-box {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+/* Adicione este CSS ao seu arquivo index.css */
+
+/* ===== Modal de Contato ===== */
+.modal-contato {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-contato {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #D92332;
+    border: 2px solid #D92332;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: modalSlide 0.3s ease;
+}
+
+@keyframes modalSlide {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fechar-modal {
+    color: #7d7d7d;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fechar-modal:hover {
+    color: #D92332;
+    transform: scale(1.2);
+}
+
+.modal-gif {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-gif img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #D92332;
+    box-shadow: 0px 0px 10px 0px #d92332d5;
+}
+
+.modal-content-contato h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-contato h2 span {
+    color: #D92332;
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    transition: 0.2s;
+    border: 2px solid transparent;
+}
+
+.contato-item:hover {
+    border: 2px solid #D92332;
+    box-shadow: 0px 0px 7px #d92332d5;
+    transform: scale(1.02);
+}
+
+.contato-item i {
+    font-size: 30px;
+    color: #D92332;
+    min-width: 30px;
+}
+
+.contato-item h4 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contato-item p {
+    color: #7d7d7d;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .modal-content-contato {
+        padding: 30px 20px;
+    }
+    
+    .modal-gif img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .modal-content-contato h2 {
+        font-size: 24px;
+    }
+    
+    .contato-item {
+        padding: 12px;
+    }
+}

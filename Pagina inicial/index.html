@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/Imagens/53_Sem_Titulo_20250412175800.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    
+    <script src="index.js" defer></script> 
+    
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <div class="capa">
+        <header>
+            <div class="interface">
+                <div class="logo">
+                    <a href="#">
+                        <img src="/Imagens/53_Sem_Titulo_20250412175800.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="Cabeçalho">
+                    <ul>
+                        <li><a href="Index.html">Início</a></li>
+                        <li><a href="/PaginaEnsinoMedio/PaginalInicial.html">Ensino Médio</a></li>
+                        <li><a href="/PaginaInicialTecnico/Index.html">Técnico</a></li>
+                        <li><a href="/Curriculo/Curriculo.html">Currículo</a></li>
+                        <li><a href="/Portfolios Anteriores/index.html">Portfolios Anteriores</a></li>
+                    </ul></nav>
+                <div class="btn-contato">
+                    <a href="#">
+                        <button>Contato</button></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="TelaIncial">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="txt-TelaIncial">
+                            <h1>Port<span>Folio</span></h1><p>É um prazer ter você por aqui.
+                                Meu nome é Gabriel Poleto e
+                                sou apaixonado pela área da
+                                tecnologia. Neste espaço, compartilho
+                                meus projetos, aprendizados e um pouco
+                                da minha trajetória escolar. </p><div class="SobreMim">
+                                <a href="#sobreMim">
+                                    <button>Sobre Mim</button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Sobre">
+                <div class="interface">
+                    <div class="flex">
+                        <div class="Img-Sobre">
+                            <img src="/imagens/Fotominha2.jpg"
+                                alt="FotoSobre">
+                        </div><div class="Txt-Sobre" id="sobreMim">
+                            <h2>Saudações, <span>sou Gabriel Poleto</span></h2>
+                            <p>Olá, sou Gabriel Alves Poleto, tenho 17 anos, estou no ponto de partida de uma carreira que é, antes de tudo, uma grande paixão: a Tecnologia da Informação.
+
+Minha jornada começou oficialmente no Curso Técnico em Desenvolvimento de Sistemas no Senai, que estou finalizando. Esta formação não foi apenas um conjunto de aulas, mas sim o lugar onde solidifiquei minha vocação e construí uma base técnica robusta.</p>
+                            </div></div></div></section></main>
+    </div>
+    
+    <section class="turma">
+  <h2>Fotos da Turma 3B</h2>
+
+  <div class="container-slider">
+    <i class="bi bi-arrow-left" id="prev-button"></i>
+    <div class="container-images">
+      <img src="/Imagens/1Foto.jpg" alt="EnsinoMedio" class="slider on">
+      <img src="/Imagens/2Foto.jpg" alt="Tecnico" class="slider">
+      <img src="/Imagens/3Foto.jpg" alt="Curriculo" class="slider">
+        <img src="/imagens/Foto4.jpg" alt="PortfoliosAnteriores" class="slider">
+        <img src="/imagens/foto5.jpg" alt=""class="slider">
+      <img src="/imagens/foto6.jpg" alt=""class="slider">
+      <img src="/imagens/foto7.jpg" alt=""class="slider">
+    </div>
+    <i class="bi bi-arrow-right" id="next-button"></i>
+  </div>
+</section>
+<!-- Adicione este código logo após a section class="turma" -->
+
+<section class="habilidades">
+    <div class="interface">
+        <h2 class="titulo">Minhas <span>Habilidades</span></h2>
+        <div class="flex-habilidades">
+            <div class="habilidade-box">
+                <i class="bi bi-code-slash"></i>
+                <h3>Desenvolvimento Web</h3>
+                <p>Experiência em HTML, CSS e JavaScript para criar interfaces modernas e responsivas.</p>
+            </div>
+
+            <div class="habilidade-box">
+                <i class="bi bi-database"></i>
+                <h3>Banco de Dados</h3>
+                <p>Conhecimento em modelagem e manipulação de dados, utilizando SQL e sistemas de gerenciamento de bancos relacionais.</p>
+            </div>
+
+            <div class="habilidade-box">
+                <i class="bi bi-gear"></i>
+                <h3>Lógica de Programação</h3>
+                <p>Base sólida em algoritmos e estruturas de dados.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="projetos">
+    <div class="interface">
+        <h2 class="titulo">Meus <span>Projetos</span></h2>
+        <div class="flex-projetos">
+            <div class="projeto-box">
+                <div class="projeto-img">
+                    <i class="bi bi-globe"></i>
+                </div>
+                <h3>Site AquaFast</h3>
+                <p>Clique abaixo para acessar nosso site web do projeto AquaFast</p>
+                <a href="https://aquafastweb.netlify.app/" class="btn-projeto">Ver Projeto</a>
+            </div>
+
+            <div class="projeto-box">
+                <div class="projeto-img">
+                    <i class="bi bi-globe"></i>
+                </div>
+                <h3>Site Mostra Steam</h3>
+                <p>Clique abaixo para acessar meu site da Mostra Steam, misturando áreas de Humanas e TI</p>
+                <a href="https://hiroshimaenagasaki.netlify.app/paginainicial/paginainicial" class="btn-projeto">Ver Projeto</a>
+            </div>
+
+            <div class="projeto-box">
+                <div class="projeto-img">
+                    <i class="bi bi-app"></i>
+                </div>
+                <h3>App Mobile AquaFast</h3>
+                <p>Clique abaixo para acessar nosso app mobile do projeto AquaFast</p>
+                <a href="https://aquafastapp.netlify.app/" class="btn-projeto">Ver Projeto</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <div id="modalContato" class="modal-contato">
+    <div class="modal-content-contato">
+        <span class="fechar-modal">&times;</span>
+        
+        <div class="modal-gif">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzBkNjBmZjM3NzI2YmVmZWM0ZjQwZWQ3YTQwZjY2MTQwZGQ3YjY5ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/L1R1tvI9svkIWwpVYr/giphy.gif" alt="Contato">
+        </div>
+        
+        <h2>Entre em <span>Contato</span></h2>
+        
+        <div class="info-contato">
+            <div class="contato-item">
+                <i class="bi bi-telephone-fill"></i>
+                <div>
+                    <h4>Telefone</h4>
+                    <p>(48) 99948-4576</p>
+                </div>
+            </div>
+            
+            <div class="contato-item">
+                <i class="bi bi-envelope-fill"></i>
+                <div>
+                    <h4>E-mail</h4>
+                    <p>gabrielpoletoalves@email.com</p>
+                </div>
+            </div>
+            
+            <div class="contato-item">
+                <i class="bi bi-linkedin"></i>
+                <div>
+                    <h4>LinkedIn</h4>
+                    <p>ahttps://www.linkedin.com/in/gabriel-poleto-87758539b/</p>
+                </div>
+            </div>
+            
+            <div class="contato-item">
+                <i class="bi bi-github"></i>
+                <div>
+                    <h4>GitHub</h4>
+                    <p>https://github.com/Dropintin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
